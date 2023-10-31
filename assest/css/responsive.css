@@ -1,0 +1,98 @@
+@media screen and (max-width:600px){
+    .logo {
+    position: relative;
+    font-size: 20px;
+    right: 160px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  nav .mainMenu {
+    height: 50vh;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    text-align: center;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    opacity: 90%;
+    transition: top 1s ease 0s;
+    display: none;
+    gap: 15px;
+  }
+
+  .mainMenu a:hover::before {
+    width: 0%; 
+  }
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  nav .mainMenu > a {
+    margin-left: 0px;
+    font-size: 20px;
+  }
+  nav .openMenu {
+    display: block;
+  }
+
+  nav .mainMenu a:hover {
+    background: none;
+  }
+  .icons i {
+    display: inline-block;
+    border: 2px solid;
+    border-radius: 20px;
+    margin-right: 35px;
+  }
+  .home{
+    height: 80vh;
+  }
+  .popup{
+    top: 350px;
+    left:70px;
+  }
+  .contact-icons i {
+    font-size: 25px;
+    margin: 0px 5px 5px 0;
+  }
+
+  
+  .about-us-page {
+    display: none;
+    position:relative;
+    top: 20%;
+    left: 0px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  
+  }
+  
+.about-us-page h2 {
+  font-size: 24px;
+  margin-bottom: 10px; 
+}
+
+.about-us-page p {
+  font-size: 16px;
+  line-height: 1.5; 
+  margin-bottom: 10px; 
+}
+
+  footer{
+    padding: 10px;
+  }
+  footer>p{
+    font-size: 10px;
+  }
+
+}

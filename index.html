@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniProject</title>
+    <link rel="stylesheet" href="assest/css/style.css">
+    <link rel="stylesheet" href="assest/css/responsive.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">WearHouse</a>
+      <nav>
+        <div class="openMenu">
+          <i class="fa fa-bars"></i>
+        </div>
+        <ul class="mainMenu">
+          <a href="#">Category</a>
+          <a href="#" id="about-us-button">About Us</a>
+          <a href="#" id="form-open">Login</a>
+          <div class="closeMenu">
+            <i class="fa fa-times"></i>
+          </div>
+          </span>
+        </ul>
+      </nav>
+    </header>
+    <section class="home">
+      <div class="about-us-page" id="about-us">
+        <h2>About Us</h2>
+        <p>WearHouse is a fast fashion brand that was founded in 2019. WearHouse aims to provide affordable, high quality, trendy, and easy-to-access fashion apparels. To fullfil our goals, we have opened more than 100 stores in various cities across Indonesia. We have a commitment to make each of our product available in every store, with equal price tags and build qualities regardless of location.</p>
+        <h2>Contact Us</h2>
+        <p>Phone: (021) 12345</p>
+        <p>Email: support@wearhouse.com</p>
+      </div>
+      <div id="error-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-popup" onclick="closeerrorPopup()">&times;</span>
+            <p>Error Email/Password yang diinput tidak sesuai</p>
+            <button class="confirmBtn" onclick="closeconfirm()">Ok</button>
+        </div>
+    </div>
+      <div class="form_container">
+
+        <i class="uil uil-times form_close"></i>
+        <!-- Login From -->
+        <div class="form login_form">
+          <form action="#">
+            <h2>Login</h2>
+            <div class="input_box">
+              <input type="email" placeholder="Enter your email" id="email" required />
+              <i class="uil uil-envelope-alt email"></i>
+            </div>
+            <div class="input_box">
+              <input type="text" placeholder="Enter your password" id="password" required />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+            <div class="option_field">
+              <span class="checkbox">
+                <input type="checkbox" id="check" />
+                <label for="check">Remember me</label>
+              </span>
+              <a href="#" class="forgot_pw">Forgot password?</a>
+            </div>
+            <button class="button" onclick="login();">Login</button>
+            <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a>
+            </div>
+          </form>
+        </div>
+        <!-- Signup From -->
+        <div class="form signup_form">
+          <form action="#">
+            <h2>Signup</h2>
+            <div class="input_box">
+              <input type="text" placeholder="Name" id="registername" required />
+              <i class="uil uil-user user"></i>
+            </div>
+            <div class="input_box">
+              <input type="email" placeholder="Enter your email" id="registeremail" required />
+              <i class="uil uil-envelope-alt email"></i>
+            </div>
+            <div class="input_box">
+              <input type="text" placeholder="Create password" id="registerpassword" required />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+            <div class="input_box">
+              <input type="text" placeholder="Confirm password" id="registerconfirmpassword" required />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+            <span class="terms-condition">
+              <input type="checkbox" id="agree" />
+              <label for="check">By cliking register.i agree to the terms and conditions.</label>
+            </span>
+            <button class="button" onclick="reg();" id="register">Register</button>
+            <div class="login_signup">Already have an account? <a href="#" id="login">Login</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="contact-icons">
+        <a href="https://twitter.com/GracioAdoni" target="_blank">
+          <i class="bx bxl-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/adongrc0" target="_blank">
+          <i class="bx bxl-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/adonia_gracio/" target="_blank">
+          <i class="bx bxl-instagram"></i>
+        </a>
+      </div>
+      <p>Copyright © 2021 Adonia Gracio. All Rights Reserved</p>
+    </footer>
+  </body>
+  <script src="assest/js/index.js"></script>
+</html>

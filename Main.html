@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniProject</title>
+    <link rel="stylesheet" href="assest/css/Main.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">WearHouse</a>
+      <nav>
+        <div class="openMenu">
+          <i class="fa fa-bars"></i>
+        </div>
+        <ul class="mainMenu">
+          <a href="#" id="category-button">Category</a>
+          <a href="#" id="about-us-button">About Us</a>
+          <div class="dropdown">
+            <button id="UserBtn" class="dropbtn"><i class="fa fa-caret-down"></i> </button>
+            <div class="dropdown-content">
+              <a href="./index.html">Logout</a>
+            </div>
+          </div>
+          <div class="closeMenu">
+            <i class="fa fa-times"></i>
+          </div>
+          </span>
+        </ul>
+      </nav>
+    </header>
+    <section class="home" id="home">
+      <div class="massage-log" id="massage-log">
+        <h1>Dashboard</h1>
+        <div class="message">
+            <p>You are logged in!</p>    
+      </div>
+    </div>
+      <div class="about-us-page" id="about-us">
+        <h2>About Us</h2>
+        <p>WearHouse is a fast fashion brand that was founded in 2019. WearHouse aims to provide affordable, high quality, trendy, and easy-to-access fashion apparels. To fullfil our goals, we have opened more than 100 stores in various cities across Indonesia. We have a commitment to make each of our product available in every store, with equal price tags and build qualities regardless of location.</p>
+        <h2>Contact Us</h2>
+        <p>Phone: (021) 12345</p>
+        <p>Email: support@wearhouse.com</p>
+      </div>
+      <div class="container">
+        <div class="form-container" id="category">
+          <form class="create_form" id="CreateForm">
+            <i class="uil uil-times form_close"></i>
+            <input type="text" class="name" name="ctgry" id="namecategory" placeholder="Insert Category" />
+            <button type="submit">Submit</button>
+          </form>
+          <form class="update_form" id="updateForm">
+            <i class="uil uil-times update_close"></i>
+            <input type="text" class="uname" id="updatectgry" placeholder="Update Category" />
+            <button type="button" id="Submitbtn">Submit</button>
+          </form>
+          <div class="modal">
+            <span class="close" id="closeModal">&times;</span>
+            <div class="modal-content">
+              <p>this Action is irreversible! Are you sure you want to delete
+              <p>this category?.</p>
+              <button class="confirmBtn" id="confimbtn">Delete</button>
+            </div>
+          </div>
+          <div class="add_div">
+            <button id="addcategory">Add Category</button>
+          </div>
+          <table id="tab">
+            <thead>
+              <th>No.</th>
+              <th>Category</th>
+              <th>Action</th>
+            </thead>
+            <tbody class="data_table"></tbody>
+          </table>
+        </div>
+      </div>
+
+    </section>
+    
+    <footer>
+      <div class="contact-icons">
+        <a href="https://twitter.com/GracioAdoni" target="_blank">
+          <i class="bx bxl-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/adongrc0" target="_blank">
+          <i class="bx bxl-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/adonia_gracio/" target="_blank">
+          <i class="bx bxl-instagram"></i>
+        </a>
+      </div>
+      <p>Copyright © 2021 Adonia Gracio. All Rights Reserved</p>
+    </footer>
+
+  </body>
+  <script src="/assest/js/jquerycrud.js"></script>
+  <script src="/assest/js/main.js"></script>
+</html>
